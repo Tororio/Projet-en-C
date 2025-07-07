@@ -18,12 +18,17 @@ int Date() {
             j = 1;
             m = m + 1;
             a =a;
+        } else if (j < 31 && m == 12) {
+            j = j + 1;
+            m = m;
+            a = a;
         } else {
             printf("Erreur : jour invalide pour le mois %d\n", m);
             return -1;
         }
 
         }
+        
     else if( m == 4 || m == 6 || m == 9 || m == 11) {
         if ( j < 30) {
             j = j + 1;
