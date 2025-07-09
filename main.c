@@ -3,7 +3,9 @@
 int Date() {
     int j, m, a;
     printf("saisir le jour, le mois et l'année :");
-    scanf("%d %d %d", &j, &m, &a);
+    scanf("%d ", &j);
+    scanf("%d", &m);
+    scanf("%d", &a);
 
     if (m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m == 12) {
         if (j < 31 && m != 12) {
